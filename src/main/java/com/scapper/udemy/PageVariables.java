@@ -3,7 +3,7 @@ package com.scapper.udemy;
 import org.openqa.selenium.By;
 
 public class PageVariables {
-	protected static final String BASE_URL = "https://www.udemy.com/";
+	protected static final String BASE_URL = "https://www.udemy.com/courses/search/?sort=relevance&q=";
 
 	protected static final By searchBar = By.name("q");
 

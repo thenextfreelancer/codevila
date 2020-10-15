@@ -4,7 +4,7 @@ public class Tutor {
 	
 	private String name;
 	
-	private UserConnections connections;
+	private SocialProfile connections;
 	
 	private String experienceMonths;
 	
@@ -18,11 +18,11 @@ public class Tutor {
 		this.name = name;
 	}
 
-	public UserConnections getConnections() {
+	public SocialProfile getConnections() {
 		return connections;
 	}
 
-	public void setConnections(UserConnections connections) {
+	public void setConnections(SocialProfile connections) {
 		this.connections = connections;
 	}
 

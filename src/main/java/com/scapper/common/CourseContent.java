@@ -2,6 +2,10 @@ package com.scapper.common;
 
 public class CourseContent {
 	
+	private int id;
+	
+	private int courseId;
+	
 	private int hourDuration;
 	
 	private int noOfDownloadableResources;
@@ -9,6 +13,22 @@ public class CourseContent {
 	private int noOfLectures;
 	
 	private int sections;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getCourseId() {
+		return courseId;
+	}
+
+	public void setCourseId(int courseId) {
+		this.courseId = courseId;
+	}
 
 	public int getHourDuration() {
 		return hourDuration;

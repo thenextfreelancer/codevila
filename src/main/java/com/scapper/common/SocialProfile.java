@@ -1,6 +1,6 @@
 package com.scapper.common;
 
-public class UserConnections {
+public class SocialProfile {
 	
 	private String twitterHandle;
 	

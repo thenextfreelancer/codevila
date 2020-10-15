@@ -4,32 +4,82 @@ import java.util.Date;
 import java.util.List;
 
 public class Course {
+
+	private int id;
+
+	private int courseGroupId;
 	
+	private CourseProvider provider;
+	
+	private String courseUrl;
+
+	private List<String> courseKeywords;
+
 	private String courseName;
-	
+
 	private String courseDescription;
-	
-	private String ratings;
-	
-	private String stars;
-	
-	private String noOfStudents;
-	
+
+	private float ratings;
+
+	private long ratingCounts;
+
+	private long noOfStudents;
+
 	private Tutor tutor;
-	
+
 	private Date lastUpdated;
-	
+
 	private List<VerbalLanguage> supportedLanguages;
-	
+
 	private int price;
-	
+
 	private CourseContent content;
-	
+
 	private String accessTime;
-	
+
 	private List<String> portableDevices;
-	
+
 	private boolean isCertification;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getCourseId() {
+		return courseGroupId;
+	}
+
+	public void setCourseId(int courseGroupId) {
+		this.courseGroupId = courseGroupId;
+	}
+	
+	public CourseProvider getProvider() {
+		return provider;
+	}
+
+	public void setProvider(CourseProvider provider) {
+		this.provider = provider;
+	}
+
+	public String getCourseUrl() {
+		return courseUrl;
+	}
+
+	public void setCourseUrl(String courseUrl) {
+		this.courseUrl = courseUrl;
+	}
+
+	public List<String> getCourseKeywords() {
+		return courseKeywords;
+	}
+
+	public void setCourseKeywords(List<String> courseKeywords) {
+		this.courseKeywords = courseKeywords;
+	}
 
 	public String getCourseName() {
 		return courseName;
@@ -47,27 +97,35 @@ public class Course {
 		this.courseDescription = courseDescription;
 	}
 
-	public String getRatings() {
+	public int getCourseGroupId() {
+		return courseGroupId;
+	}
+
+	public void setCourseGroupId(int courseGroupId) {
+		this.courseGroupId = courseGroupId;
+	}
+
+	public float getRatings() {
 		return ratings;
 	}
 
-	public void setRatings(String ratings) {
+	public void setRatings(float ratings) {
 		this.ratings = ratings;
 	}
 
-	public String getStars() {
-		return stars;
+	public long getRatingCounts() {
+		return ratingCounts;
 	}
 
-	public void setStars(String stars) {
-		this.stars = stars;
+	public void setRatingCounts(long ratingCounts) {
+		this.ratingCounts = ratingCounts;
 	}
 
-	public String getNoOfStudents() {
+	public long getNoOfStudents() {
 		return noOfStudents;
 	}
 
-	public void setNoOfStudents(String noOfStudents) {
+	public void setNoOfStudents(long noOfStudents) {
 		this.noOfStudents = noOfStudents;
 	}
 
@@ -134,5 +192,5 @@ public class Course {
 	public void setCertification(boolean isCertification) {
 		this.isCertification = isCertification;
 	}
-	
+
 }
